@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline Evolutiva Data Science</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Urbanist:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Compartilha SEPLAG - NCD/IGPE</h1>
+    </header>
+
+    <div class="container">
+        <!-- SVG Gráfico - ViewBox Aumentado para 800 de altura -->
+        <svg viewBox="0 0 1400 800" style="width: 100%; height: 100%; overflow: visible;">
+            <defs>
+                <linearGradient id="gradBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#00d2ff" stop-opacity="1" />
+                    <stop offset="100%" stop-color="#0080ff" stop-opacity="0.6" />
+                </linearGradient>
+                <linearGradient id="gradGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#00ff85" stop-opacity="1" />
+                    <stop offset="100%" stop-color="#00cc6a" stop-opacity="0.6" />
+                </linearGradient>
+                <linearGradient id="gradYellow" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#ffd600" stop-opacity="1" />
+                    <stop offset="100%" stop-color="#ffaa00" stop-opacity="0.6" />
+                </linearGradient>
+                <linearGradient id="gradPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#af00ff" stop-opacity="1" />
+                    <stop offset="100%" stop-color="#7a00ff" stop-opacity="0.6" />
+                </linearGradient>
+                <linearGradient id="gradFuture" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+                    <stop offset="100%" stop-color="#aaaaaa" stop-opacity="0.6" />
+                </linearGradient>
+                
+                <filter id="glow">
+                    <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+                    <feMerge>
+                        <feMergeNode in="coloredBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+
+            <!-- Grid lines vertical -->
+            <line x1="200" y1="50" x2="200" y2="750" stroke="#222" stroke-width="2" stroke-dasharray="5,5" />
+            <line x1="533" y1="50" x2="533" y2="750" stroke="#222" stroke-width="2" stroke-dasharray="5,5" />
+            <line x1="866" y1="50" x2="866" y2="750" stroke="#222" stroke-width="2" stroke-dasharray="5,5" />
+            <line x1="1200" y1="50" x2="1200" y2="750" stroke="#222" stroke-width="2" stroke-dasharray="5,5" />
+
+            <!-- GRUPO 2023 (AZUL) - LINHA ÚNICA -->
+            <path class="animated-path" d="M 200 300 C 350 300, 400 250, 533 220 S 700 180, 866 170 S 1050 150, 1200 150" fill="none" stroke="url(#gradBlue)" stroke-width="8" opacity="0.9" filter="url(#glow)" />
+            <path d="M 200 300 C 300 300, 500 350, 1200 350" fill="none" stroke="url(#gradBlue)" stroke-width="2" opacity="0.1" />
+
+            <!-- GRUPO 2024 (VERDE) - LINHA ÚNICA -->
+            <path class="animated-path" d="M 533 350 C 660 350, 750 320, 866 310 S 1050 280, 1200 280" fill="none" stroke="url(#gradGreen)" stroke-width="8" opacity="0.9" filter="url(#glow)" />
+
+            <!-- GRUPO 2025 (AMARELO) - LINHA ÚNICA -->
+            <path class="animated-path" d="M 866 400 C 950 400, 1000 560, 1300 560" fill="none" stroke="url(#gradYellow)" stroke-width="8" opacity="0.9" filter="url(#glow)" />
+
+            <!-- GRUPO 2026 (ROXO) - LINHA ÚNICA -->
+            <path class="animated-path" d="M 1200 450 C 1250 450, 1300 480, 1400 450" fill="none" stroke="url(#gradPurple)" stroke-width="8" opacity="0.9" filter="url(#glow)" />
+
+            <!-- FUTURE PATH (Hidden until simulation) -->
+            <path id="future-path" class="future-node" d="M 1400 450 C 1450 450, 1500 450, 1550 450" fill="none" stroke="url(#gradFuture)" stroke-width="8" stroke-dasharray="10,5" filter="url(#glow)" />
+
+        </svg>
+
+        <!-- ICON NODES (Percentage Positioned) -->
+        <div class="timeline-icon-node" style="left: 14.3%; top: 37.5%; border-color: #00d2ff;">
+            <iconify-icon icon="lucide:layout-dashboard" style="color: #00d2ff;"></iconify-icon>
+        </div>
+        <div class="timeline-icon-node" style="left: 38.1%; top: 43.75%; border-color: #00ff85;">
+            <iconify-icon icon="lucide:code-2" style="color: #00ff85;"></iconify-icon>
+        </div>
+        <div class="timeline-icon-node" style="left: 61.9%; top: 50%; border-color: #ffd600;">
+            <iconify-icon icon="lucide:bot" style="color: #ffd600;"></iconify-icon>
+        </div>
+        <div class="timeline-icon-node" style="left: 85.7%; top: 56.25%; border-color: #af00ff;">
+            <iconify-icon icon="lucide:star" style="color: #af00ff;"></iconify-icon>
+        </div>
+        <div class="timeline-icon-node future-node" style="left: 110.7%; top: 56.25%; border-color: #fff;">
+            <iconify-icon icon="lucide:trending-up" style="color: #fff;"></iconify-icon>
+        </div>
+
+        <!-- LABELS INFERIORES -->
+        <div class="year-label c-2023 glow-2023" style="left: 14.2%;">
+            2023
+            <span class="year-sub">Dashboards e<br>Estudos</span>
+        </div>
+        <div class="year-label c-2024 glow-2024" style="left: 38%;">
+            2024
+            <span class="year-sub">Desenvolvimento de<br>Software</span>
+        </div>
+        <div class="year-label c-2025 glow-2025" style="left: 61.8%;">
+            2025
+            <span class="year-sub">Automação<br>do EFisco</span>
+        </div>
+        <div class="year-label c-2026 glow-2026" style="left: 85.7%;">
+            2026
+            <span class="year-sub">Projetos Especiais</span>
+        </div>
+
+        <!-- TAGS -->
+        <!-- 2023 -->
+        <div class="floating-tag tag-blue" data-year="2023" data-cat="Dashboards" style="top: 30%; left: 18%;">Folha de Servidores</div>
+        <div class="floating-tag tag-blue" data-year="2023" data-cat="Dashboards" style="top: 26%; left: 28%;">Ficha Municipal</div>
+        <div class="floating-tag tag-blue" data-year="2023" data-cat="Estudos" style="top: 34%; left: 25%;">Estudos Creches e Maternidades</div>
+        <div class="floating-tag tag-blue" data-year="2023" data-cat="Dashboards" style="top: 28%; left: 42%;">Pleitos Orçamentários</div>
+        <div class="floating-tag tag-blue" data-year="2023" data-cat="Dashboards" style="top: 18%; left: 45%;">Painel de Execução Orçamentária</div>
+        <div class="floating-tag tag-blue" data-year="2023" data-cat="Dashboards" style="top: 26%; left: 57%;">Compara Estados</div>
+        <div class="floating-tag tag-blue" data-year="2023" data-cat="Estudos" style="top: 20%; left: 22%;">Panorama Censo</div>
+        <div class="floating-tag tag-blue" data-year="2023" data-cat="Dashboards" style="top: 15%; left: 65%;">Qualidade de Vida</div>
+        <div class="floating-tag tag-blue" data-year="2023" data-cat="Dashboards" style="top: 24%; left: 70%;">Orçamento Criança</div>
+        <div class="floating-tag tag-blue" data-year="2023" data-cat="Dashboards" style="top: 16%; left: 78%;">Emendas Parlamentares</div>
+
+        <!-- 2024 -->
+        <div class="floating-tag tag-green" data-year="2024" data-cat="Software" style="top: 42%; left: 42%;">Programa de Formação Continuada</div>
+        <div class="floating-tag tag-green" data-year="2024" data-cat="Software" style="top: 35%; left: 62%;">Encaminhamentos Núcleo Gestor</div>
+        <div class="floating-tag tag-green" data-year="2024" data-cat="Software" style="top: 40%; left: 70%;">Funcionograma</div>
+        <div class="floating-tag tag-green" data-year="2024" data-cat="Software" style="top: 32%; left: 81%;">App de Emendas Parlamentares</div>
+
+        <!-- 2025 -->
+        <div class="floating-tag tag-yellow" data-year="2025" data-cat="Automação" style="top: 55%; left: 56%;">Remanejamento Ordinário</div>
+        <div class="floating-tag tag-yellow" data-year="2025" data-cat="Automação" style="top: 58%; left: 73%;">Créditos Adicionais</div>
+        <div class="floating-tag tag-yellow" data-year="2025" data-cat="Automação" style="top: 63%; left: 65%;">Emendas Derivadas</div>
+        <div class="floating-tag tag-yellow" data-year="2025" data-cat="Automação" style="top: 70%; left: 70%;">Prestação de Contas Op. Crédito</div>
+
+        <!-- 2026 -->
+        <div class="floating-tag tag-purple" data-year="2026" data-cat="Projetos Especiais" style="top: 55%; left: 100%;">Profisco III</div>
+        <div class="floating-tag tag-purple" data-year="2026" data-cat="Projetos Especiais" style="top: 50%; left: 93%;">Cientista Arretado</div>
+        <div class="floating-tag tag-purple" data-year="2026" data-cat="Projetos Especiais" style="top: 57%; left: 91%;">Desafios PE</div>
+
+        <!-- 2027 (Future) - Dynamic -->
+        <div id="future-label" class="year-label future-node" style="left: 110%; bottom: 40px; font-size: 1.2rem;">2027<span class="year-sub" id="future-theme">???</span></div>
+
+    </div>
+
+    <!-- BOTÃO SIMULAR -->
+    <button class="ai-sim-btn" onclick="simulateFuture()">
+        <i class="fa-solid fa-wand-magic-sparkles sparkle-icon"></i>
+        Simular Futuro
+    </button>
+
+    <footer>
+        Secretaria de Planejamento, Gestão e Desenv. Regional<br>
+        Instituto de Gestão<br>
+        2026
+    </footer>
+
+    <div class="modal-overlay" id="aiModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle"><i class="fa-solid fa-circle-info"></i> Detalhes do Projeto</h2>
+                <button class="modal-close" onclick="closeModal()"><i class="fa-solid fa-times"></i></button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content goes here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
