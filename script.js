@@ -5,6 +5,11 @@ const modalBody = document.getElementById('modalBody');
 
 let projectsData = {};
 
+// FUNÇÃO PARA SCROLL ATÉ A TIMELINE
+window.scrollToTimeline = function() {
+    document.getElementById('timeline-section').scrollIntoView({ behavior: 'smooth' });
+}
+
 // Carregar dados dos projetos
 fetch('projects.json')
     .then(response => response.json())

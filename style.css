@@ -1,13 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: #05050a;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
     font-family: 'Space Grotesk', sans-serif;
     color: #fff;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 header {
@@ -18,6 +19,8 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 100;
     text-align: center;
+    position: sticky;
+    top: 0;
 }
 
 header h1 {
@@ -25,33 +28,121 @@ header h1 {
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #fff; /* Fallback for unsupported browsers */
+    color: #fff;
     background: linear-gradient(90deg, #00d2ff, #af00ff);
     background-clip: text;
-    -webkit-background-clip: text; /* For Safari support */
+    -webkit-background-clip: text;
     text-fill-color: transparent;
-    -webkit-text-fill-color: transparent; /* For Safari support */
+    -webkit-text-fill-color: transparent;
 }
 
-footer {
-    width: 100%;
-    padding: 15px;
-    background: rgba(10, 10, 20, 0.8);
-    backdrop-filter: blur(10px);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 0 20px;
+    background: radial-gradient(circle at center, rgba(110, 0, 255, 0.1) 0%, transparent 70%);
+    position: relative;
+}
+
+.hero-content {
+    max-width: 900px;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #fff 30%, #888);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+}
+
+.hero-subtitle {
     font-family: 'Urbanist', sans-serif;
-    font-size: 0.8rem;
-    color: #888;
-    line-height: 1.4;
-    z-index: 100;
+    font-size: 1.4rem;
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.hero-features {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.hero-feature-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.hero-feature-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(175, 0, 255, 0.4);
+}
+
+.hero-feature-item i {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.hero-feature-item.blue i { color: #00d2ff; }
+.hero-feature-item.green i { color: #00ff85; }
+.hero-feature-item.purple i { color: #af00ff; }
+
+.hero-feature-item span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hero-cta {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-family: 'Space Grotesk';
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-cta:hover {
+    background: #fff;
+    color: #05050a;
+}
+
+/* TIMELINE SECTION */
+.timeline-section {
+    min-height: 100vh;
+    padding: 60px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
-    flex: 1;
     width: 90%;
     position: relative;
     margin: 0;
+    height: 700px;
 }
 
 /* Labels dos Anos */
