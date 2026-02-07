@@ -3,6 +3,16 @@ const modal = document.getElementById('aiModal');
 const modalTitle = document.getElementById('modalTitle');
 const modalBody = document.getElementById('modalBody');
 
+let projectsData = {};
+
+// Carregar dados dos projetos
+fetch('projects.json')
+    .then(response => response.json())
+    .then(data => {
+        projectsData = data;
+    })
+    .catch(error => console.error('Erro ao carregar projects.json:', error));
+
 // FUNÇÃO PARA ABRIR MODAL
 window.openModal = function(title) {
     modalTitle.innerHTML = `<i class="fa-solid fa-circle-info"></i> ${title}`;
@@ -21,16 +31,26 @@ modal.addEventListener('click', (e) => {
 
 // 1. FUNÇÃO: DETALHES DE PROJETOS (Clique nas tags)
 window.generateProjectInsight = function(tagElement) {
-    const project = tagElement.textContent;
-    const year = tagElement.dataset.year;
-    const category = tagElement.dataset.cat;
+    const id = tagElement.id;
+    const project = projectsData[id] || {
+        title: tagElement.textContent,
+        year: tagElement.dataset.year,
+        category: tagElement.dataset.cat,
+        description: "Informações detalhadas em breve.",
+        impact: "Impacto estratégico para a gestão pública."
+    };
 
-    openModal(project);
+    openModal(project.title);
 
     modalBody.innerHTML = `
-        <p><strong>Ano:</strong> ${year}</p>
-        <p><strong>Categoria:</strong> ${category}</p>
-        <p style="margin-top: 15px;">Este projeto faz parte da evolução estratégica do NCD, focado em ${category.toLowerCase()} para melhorar a gestão pública.</p>
+        <div class="project-details">
+            <p><strong><i class="fa-solid fa-calendar-days"></i> Ano:</strong> ${project.year}</p>
+            <p><strong><i class="fa-solid fa-layer-group"></i> Categoria:</strong> ${project.category}</p>
+            <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 15px 0;">
+            <p><strong><i class="fa-solid fa-file-lines"></i> Descrição:</strong><br>${project.description}</p>
+            <p style="margin-top: 15px;"><strong><i class="fa-solid fa-chart-line"></i> Impacto:</strong><br>${project.impact}</p>
+            <p style="margin-top: 15px;"><strong><i class="fa-solid fa-arrow-up-right-from-square"></i> Veja esse projeto:</strong><br><a href="${project.link}" target="_blank" style="color: #00d2ff; text-decoration: none;">Acesse aqui <i class="fa-solid fa-external-link" style="font-size: 0.8em;"></i></a></p>
+        </div>
     `;
 }
 
