@@ -25,7 +25,7 @@
   },
   "pleitos-orcamentarios": {
     "title": "Pleitos Orçamentários",
-    "year": "2023",
+    "year": "2024",
     "category": "Dashboards",
     "description": "Sistema de acompanhamento de solicitações orçamentárias das secretarias durante a execução da LOA.",
     "impact": "Agilidade no fluxo de abravação e melhor controle das demandas setoriais.",
@@ -33,7 +33,7 @@
   },
   "painel-execucao": {
     "title": "Painel de Execução Orçamentária",
-    "year": "2023",
+    "year": "2024",
     "category": "Dashboards",
     "description": "Visualização das execução das despesas e receitas do estado.",
     "impact": "Melhoria na gestão fiscal e cumprimento de metas orçamentárias.",
@@ -41,7 +41,7 @@
   },
   "compara-estados": {
     "title": "Compara Estados",
-    "year": "2023",
+    "year": "2024",
     "category": "Dashboards",
     "description": "Comparitivo de indicadores fiscais entre o estado e outras unidades da federação.",
     "impact": "Identificação dos melhores desempenho em gestão fiscal e posicionamento competitivo do estado.",
@@ -65,7 +65,7 @@
   },
   "orcamento-crianca": {
     "title": "Orçamento Criança",
-    "year": "2023",
+    "year": "2025",
     "category": "Dashboards",
     "description": "Rastreamento de recursos destinados a políticas públicas para a primeira infância.",
     "impact": "Garantia de transparência e prioridade orçamentária para o público infantil.",
@@ -73,7 +73,7 @@
   },
   "emendas-parlamentares": {
     "title": "Emendas Parlamentares",
-    "year": "2023",
+    "year": "2025",
     "category": "Dashboards",
     "description": "Controle da execução financeira e documental das emendas dos parlamentares estaduais.",
     "impact": "Redução de gargalos burocráticos e transparência na relação com o legislativo.",
@@ -89,7 +89,7 @@
   },
   "nucleo-gestor": {
     "title": "Encaminhamentos Núcleo Gestor",
-    "year": "2024",
+    "year": "2025",
     "category": "Software",
     "description": "Ferramenta de fluxo de trabalho para decisões do comitê de gestão estadual.",
     "impact": "Rastreabilidade e celeridade nas decisões estratégicas de governo.",
@@ -97,15 +97,23 @@
   },
   "funcionograma": {
     "title": "Funcionograma",
-    "year": "2024",
+    "year": "2025",
     "category": "Software",
     "description": "Mapeamento digital da estrutura organizacional e lotação de pessoal.",
     "impact": "Visão clara da força de trabalho e suporte a processos de remanejamento.",
     "link": "https://www.funcionograma.seplag.pe.gov.br/"
   },
+  "rgs": {
+    "title": "Relatório Anual de Ações do Governo",
+    "year": "2026",
+    "category": "Software",
+    "description": "Monitoramento as ações e os programas do governo em áreas chave como saúde, educação, segurança e desenvolvimento sustentável.",
+    "impact": "Objeto de transparência por disponibilizar à população uma ferramenta prática para monitoramento das ações governamentais.",
+    "link": "https://relatoriodegestao.seplag.pe.gov.br"
+  },
   "app-emendas": {
     "title": "App de Emendas Parlamentares",
-    "year": "2024",
+    "year": "2026",
     "category": "Software",
     "description": "Versão mobile para acompanhamento ágil das emendas pelos parlamentares e assessores.",
     "impact": "Mobilidade e transparência no processo legislativo-executivo.",
@@ -140,8 +148,24 @@
     "year": "2025",
     "category": "Automação",
     "description": "Sistema para prestação de contas de empréstimos e financiamentos internacionais.",
-    "impact": "Cumprimento rigoroso de prazos e normas de organismos internacionais (BIRD, BID).",
+    "impact": "Cumprimento rigoroso de prazos e normas de organismos nacionais e internacionais (BIRD, BID).",
     "link": "https://docs.google.com/document/d/1zMXB4Xahf0GFmiR07q8z22NzKCiQgGtUK1n8lwj28OY/edit?tab=t.0"
+  },
+  "ignacio": {
+    "title": "Ignácio",
+    "year": "2025",
+    "category": "Automação",
+    "description": "Chatbot que retorna ao usuário métricas do PFC.",
+    "impact": "Respostas rápidas ao gestor governamental, a qualquer hora, pelo celular.",
+    "link": "https://pt.wikipedia.org/wiki/Chatbot"
+  },
+  "ze": {
+    "title": "Zé da Pauta",
+    "year": "2026",
+    "category": "Automação",
+    "description": "Chatbot que traz informações atualizadas sobre solicitações orçamentárias.",
+    "impact": "Respostas rápidas ao gestor governamental e solicitantes, a qualquer hora, pelo celular.",
+    "link": "https://pt.wikipedia.org/wiki/Chatbot"
   },
   "profisco-iii": {
     "title": "Profisco III",
@@ -166,5 +190,13 @@
     "description": "Plataforma de inovação aberta junto a startups para solução de problemas complexos do estado.",
     "impact": "Integração do ecossistema de inovação com as demandas do governo.",
     "link": "https://desafios.pe.gov.br/"
+  },
+  "cafe": {
+    "title": "Café",
+    "year": "2023-2026",
+    "category": "Joke",
+    "description": "O combustível essencial que mantém o NCD funcionando 24/7. Responsável por 99% das linhas de código e 100% da sanidade mental da equipe.",
+    "impact": "Transformação direta de cafeína em software de alta qualidade.",
+    "link": "https://pt.wikipedia.org/wiki/Caf%C3%A9"
   }
 }
