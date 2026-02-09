@@ -288,8 +288,8 @@ svg .animated-path {
 /* Simulation Button */
 .ai-sim-btn {
     position: absolute;
-    bottom: 60px;
-    right: 30px;
+    bottom: 130px;
+    right: 50px;
     background: rgba(10, 10, 18, 0.8);
     border: 1px solid rgba(255,255,255,0.2);
     padding: 12px 25px;
