@@ -339,6 +339,61 @@ svg .animated-path {
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
 }
 
+/* New Dynamic Node Tooltip */
+.node-custom-tooltip {
+    position: fixed;
+    transform: translate(-50%, 0);
+    background: rgba(10, 10, 20, 0.98);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 16px;
+    width: 320px;
+    color: #fff;
+    font-family: 'Urbanist', sans-serif;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.8), 0 0 20px rgba(175, 0, 255, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 9999;
+    backdrop-filter: blur(12px);
+}
+
+.node-custom-tooltip.active {
+    opacity: 1;
+    transform: translate(-50%, 10px);
+}
+
+.node-custom-tooltip h3 {
+    margin: 0 0 10px 0;
+    font-family: 'Space Grotesk';
+    font-size: 1.2rem;
+    color: #af00ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.node-custom-tooltip p {
+    margin: 0 0 10px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.node-custom-tooltip p:last-child {
+    margin-bottom: 0;
+}
+
+.node-custom-tooltip::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid rgba(255, 255, 255, 0.15);
+}
+
 /* Future Node (2027) - Hidden initially */
 .future-node { opacity: 0; transition: opacity 1s ease; }
 .future-node.visible { opacity: 1; }
