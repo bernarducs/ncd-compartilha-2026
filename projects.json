@@ -3,9 +3,9 @@
     "title": "Folha de Servidores",
     "year": "2023",
     "category": "Dashboards",
-    "description": "Monitoramento detalhado da folha de pagamento estadual, permitindo análise de evolução de gastos e identificação de inconsistências.",
-    "impact": "Otimização de recursos e maior transparência nos gastos com pessoal.",
-    "link": "https://www.seplag.pe.gov.br"
+    "description": "Dados da folha de ativos e inativos, permitindo análise de evolução de gastos e identificação de inconsistências.",
+    "impact": "Identificação das maiores e menores evoluções por categoria e cargo relacionando as depesas do grupo 1 de despesas.",
+    "link": "https://powerbi.pe.gov.br/relatorios/powerbi/SEPLAG/IGPE/NCD/Folha%20de%20Pagamento_NOVO"
   },
   "ficha-municipal": {
     "title": "Ficha Municipal",
@@ -13,7 +13,7 @@
     "category": "Dashboards",
     "description": "Painel consolidado com indicadores socioeconômicos de todos os municípios do estado para suporte à tomada de decisão regional.",
     "impact": "Facilitação do planejamento de políticas públicas municipalistas.",
-    "link": "https://www.seplag.pe.gov.br"
+    "link": "https://powerbi.pe.gov.br/relatorios/powerbi/SEPLAG/IGPE/NCD/Ficha%20Municipal"
   },
   "estudos-creches": {
     "title": "Estudos Creches e Maternidades",
@@ -21,31 +21,31 @@
     "category": "Estudos",
     "description": "Análise geoespacial e demográfica da demanda por creches e maternidades para otimização da rede de atendimento.",
     "impact": "Identificação de vazios assistenciais e priorização de investimentos em saúde e educação.",
-    "link": "https://www.seplag.pe.gov.br"
+    "link": "https://docs.google.com/document/d/1bovlAQYEdK939-Pi7X8s2Gt9B5bnu4zJ/edit"
   },
   "pleitos-orcamentarios": {
     "title": "Pleitos Orçamentários",
     "year": "2023",
     "category": "Dashboards",
-    "description": "Sistema de acompanhamento de solicitações orçamentárias das secretarias durante a elaboração da LOA.",
+    "description": "Sistema de acompanhamento de solicitações orçamentárias das secretarias durante a execução da LOA.",
     "impact": "Agilidade no fluxo de abravação e melhor controle das demandas setoriais.",
-    "link": "https://www.seplag.pe.gov.br"
+    "link": "https://powerbi.pe.gov.br/relatorios/powerbi/SEPLAG/SEPO/Controle%20de%20Pautas"
   },
   "painel-execucao": {
     "title": "Painel de Execução Orçamentária",
     "year": "2023",
     "category": "Dashboards",
-    "description": "Visualização em tempo real da execução das despesas e receitas do estado.",
+    "description": "Visualização das execução das despesas e receitas do estado.",
     "impact": "Melhoria na gestão fiscal e cumprimento de metas orçamentárias.",
-    "link": "https://www.seplag.pe.gov.br"
+    "link": "https://powerbi.pe.gov.br/relatorios/powerbi/SEPLAG/SEPO/Execu%C3%A7%C3%A3o%20Secretarias/Painel%20de%20Execu%C3%A7%C3%A3o%20Or%C3%A7ament%C3%A1ria"
   },
   "compara-estados": {
     "title": "Compara Estados",
     "year": "2023",
     "category": "Dashboards",
-    "description": "Benchmarking de indicadores fiscais e sociais entre o estado e outras unidades da federação.",
-    "impact": "Identificação de melhores práticas e posicionamento competitivo do estado.",
-    "link": "https://www.seplag.pe.gov.br"
+    "description": "Comparitivo de indicadores fiscais entre o estado e outras unidades da federação.",
+    "impact": "Identificação dos melhores desempenho em gestão fiscal e posicionamento competitivo do estado.",
+    "link": "https://powerbi.pe.gov.br/relatorios/powerbi/SEPLAG/SEPO/Compara%20Estados%20STN"
   },
   "panorama-censo": {
     "title": "Panorama Censo",
@@ -53,15 +53,15 @@
     "category": "Estudos",
     "description": "Tratamento e visualização dos dados do Censo 2022 aplicados à realidade estadual.",
     "impact": "Atualização das bases de dados para cálculo de repasses e planejamento populacional.",
-    "link": "https://www.seplag.pe.gov.br"
+    "link": "https://powerbi.pe.gov.br/relatorios/powerbi/SEPLAG/IGPE/NCD/Panorama%20Censo_Nova%20Versao_07.08"
   },
   "qualidade-vida": {
     "title": "Qualidade de Vida",
     "year": "2023",
     "category": "Dashboards",
-    "description": "Monitoramento de índices de bem-estar e serviços públicos básicos.",
-    "impact": "Foco na experiência do cidadão com os serviços estaduais.",
-    "link": "https://www.seplag.pe.gov.br"
+    "description": "Monitoramento de índices de bem-estar entre servidores da SEPLAG.",
+    "impact": "Foco na experiência do servidor em relação ao clima organizacional e infraestrutura da secretaria.",
+    "link": "https://powerbi.pe.gov.br/relatorios/powerbi/SEPLAG/Geral/Qualidade%20de%20Vida"
   },
   "orcamento-crianca": {
     "title": "Orçamento Criança",
@@ -69,15 +69,15 @@
     "category": "Dashboards",
     "description": "Rastreamento de recursos destinados a políticas públicas para a primeira infância.",
     "impact": "Garantia de transparência e prioridade orçamentária para o público infantil.",
-    "link": "https://www.seplag.pe.gov.br"
+    "link": "https://powerbi.pe.gov.br/relatorios/powerbi/SEPLAG/SEPO/Or%C3%A7amento%20Crian%C3%A7a"
   },
   "emendas-parlamentares": {
     "title": "Emendas Parlamentares",
     "year": "2023",
     "category": "Dashboards",
-    "description": "Controle da execução física e financeira das emendas dos parlamentares estaduais.",
+    "description": "Controle da execução financeira e documental das emendas dos parlamentares estaduais.",
     "impact": "Redução de gargalos burocráticos e transparência na relação com o legislativo.",
-    "link": "https://www.seplag.pe.gov.br"
+    "link": "https://powerbi.pe.gov.br/relatorios/powerbi/SEPLAG/IGPE/NCD/Gest%C3%A3o%20de%20Emendas%20Parlamentares"
   },
   "formacao-continuada": {
     "title": "Programa de Formação Continuada",
@@ -85,7 +85,7 @@
     "category": "Software",
     "description": "Plataforma de gestão de cursos e desenvolvimento de competências para servidores públicos.",
     "impact": "Profissionalização da gestão pública e retenção de talentos.",
-    "link": "https://www.seplag.pe.gov.br"
+    "link": "https://www.pfc.seplag.pe.gov.br/"
   },
   "nucleo-gestor": {
     "title": "Encaminhamentos Núcleo Gestor",
@@ -93,7 +93,7 @@
     "category": "Software",
     "description": "Ferramenta de fluxo de trabalho para decisões do comitê de gestão estadual.",
     "impact": "Rastreabilidade e celeridade nas decisões estratégicas de governo.",
-    "link": "https://www.seplag.pe.gov.br"
+    "link": "https://painelgestao.seplag.pe.gov.br/"
   },
   "funcionograma": {
     "title": "Funcionograma",
@@ -101,7 +101,7 @@
     "category": "Software",
     "description": "Mapeamento digital da estrutura organizacional e lotação de pessoal.",
     "impact": "Visão clara da força de trabalho e suporte a processos de remanejamento.",
-    "link": "https://www.seplag.pe.gov.br"
+    "link": "https://www.funcionograma.seplag.pe.gov.br/"
   },
   "app-emendas": {
     "title": "App de Emendas Parlamentares",
@@ -109,7 +109,7 @@
     "category": "Software",
     "description": "Versão mobile para acompanhamento ágil das emendas pelos parlamentares e assessores.",
     "impact": "Mobilidade e transparência no processo legislativo-executivo.",
-    "link": "https://www.seplag.pe.gov.br"
+    "link": "TBA"
   },
   "remanejamento-ordinario": {
     "title": "Remanejamento Ordinário",
@@ -117,7 +117,7 @@
     "category": "Automação",
     "description": "Automação do processo de ajustes orçamentários entre dotações de uma mesma secretaria.",
     "impact": "Redução drástica no tempo de processamento de alterações orçamentárias.",
-    "link": "https://www.seplag.pe.gov.br"
+    "link": "https://en.wikipedia.org/wiki/Robotic_process_automation"
   },
   "creditos-adicionais": {
     "title": "Créditos Adicionais",
@@ -125,7 +125,7 @@
     "category": "Automação",
     "description": "Fluxo automatizado para abertura de créditos suplementares e especiais.",
     "impact": "Maior segurança jurídica e técnica na expansão do teto orçamentário.",
-    "link": "https://www.seplag.pe.gov.br"
+    "link": "https://en.wikipedia.org/wiki/Robotic_process_automation"
   },
   "emendas-derivadas": {
     "title": "Emendas Derivadas",
@@ -133,7 +133,7 @@
     "category": "Automação",
     "description": "Módulo inteligente para derivação automática de emendas a partir da estrutura da LOA.",
     "impact": "Eliminação de erros manuais na digitação de códigos orçamentários.",
-    "link": "https://www.seplag.pe.gov.br"
+    "link": "https://en.wikipedia.org/wiki/Robotic_process_automation"
   },
   "prestacao-contas": {
     "title": "Prestação de Contas Op. Crédito",
@@ -141,7 +141,7 @@
     "category": "Automação",
     "description": "Sistema para prestação de contas de empréstimos e financiamentos internacionais.",
     "impact": "Cumprimento rigoroso de prazos e normas de organismos internacionais (BIRD, BID).",
-    "link": "https://www.seplag.pe.gov.br"
+    "link": "https://docs.google.com/document/d/1zMXB4Xahf0GFmiR07q8z22NzKCiQgGtUK1n8lwj28OY/edit?tab=t.0"
   },
   "profisco-iii": {
     "title": "Profisco III",
@@ -155,15 +155,15 @@
     "title": "Cientista Arretado",
     "year": "2026",
     "category": "Projetos Especiais",
-    "description": "Programa de incentivo ao uso de ciência de dados e IA por servidores de carreira.",
-    "impact": "Cultura de dados enraizada na administração pública.",
+    "description": "Programa de cooperação entre o governo e a comunidade científica para desafios enfrentados pela gestão pública estadual.",
+    "impact": "Cultura de colaboração entre gestão e academia na administração pública.",
     "link": "https://www.seplag.pe.gov.br"
   },
   "desafios-pe": {
     "title": "Desafios PE",
     "year": "2026",
     "category": "Projetos Especiais",
-    "description": "Plataforma de inovação aberta para solução de problemas complexos do estado.",
+    "description": "Plataforma de inovação aberta junto a startups para solução de problemas complexos do estado.",
     "impact": "Integração do ecossistema de inovação com as demandas do governo.",
     "link": "https://www.seplag.pe.gov.br"
   }
