@@ -34,6 +34,11 @@ window.scrollToTimeline = function() {
     document.getElementById('timeline-section').scrollIntoView({ behavior: 'smooth' });
 }
 
+// FUNÇÃO PARA SCROLL ATÉ O TIME
+window.scrollToTeam = function() {
+    document.getElementById('team-section').scrollIntoView({ behavior: 'smooth' });
+}
+
 // Carregar dados dos projetos
 fetch('projects.json')
     .then(response => response.json())
