@@ -129,20 +129,20 @@ window.simulateFuture = function() {
     document.querySelectorAll('.future-node').forEach(el => el.classList.add('visible'));
 
     // Atualizar UI
-    document.getElementById('future-theme').textContent = "Governança Preditiva";
+    document.getElementById('future-theme').textContent = "Capital Humano";
     
     // Abrir modal com detalhes
     openModal(`Visão de Futuro: 2027`);
     
     modalBody.innerHTML = `
-        <h3 style="color:#fff; margin-top:0;">Governança Preditiva</h3>
+        <h3 style="color:#fff; margin-top:0;">Capital Humano</h3>
         <p>Consolidação do DataLab e expansão da inteligência analítica em todos os níveis da gestão.</p>
         <div style="background:rgba(255,255,255,0.05); padding:15px; border-radius:10px; margin-top:15px;">
             <strong style="color:#af00ff">Projetos Planejados:</strong>
             <ul style="padding-left:20px; margin-top:10px;">
                 <li style="margin-bottom:5px; color:#fff;">Assistente Virtual para Gestores</li>
-                <li style="margin-bottom:5px; color:#fff;">Modelagem Preditiva de Receita</li>
-                <li style="margin-bottom:5px; color:#fff;">Auditória Automatizada com MLOps</li>
+                <li style="margin-bottom:5px; color:#fff;">Modelagem Preditiva para Cenários Fiscais</li>
+                <li style="margin-bottom:5px; color:#fff;">Copiloto Orçamentário</li>
             </ul>
         </div>
     `;
